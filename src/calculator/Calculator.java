@@ -110,14 +110,14 @@ public class Calculator implements Runnable, ActionListener
 		JFrame frame=new JFrame("Grade Calculator");
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.setMinimumSize(size);
-        frame.setPreferredSize(size);
-        frame.setMaximumSize(size);
+        	frame.setPreferredSize(size);
+        	frame.setMaximumSize(size);
         
-        taskChoicesComboBox = new JComboBox<String>(taskTypes);
+        	taskChoicesComboBox = new JComboBox<String>(taskTypes);
 		taskChoicesComboBox.setBackground(Color.lightGray);
 		taskChoicesComboBox.setSelectedIndex(0);
         
-        titleLabel = new JLabel("Title: "); 
+        	titleLabel = new JLabel("Title: "); 
 		titleLabel.setBackground(backgroundColor);
 		titleLabel.setBorder(emptyBorder);
 		
@@ -150,14 +150,14 @@ public class Calculator implements Runnable, ActionListener
 		messageToUserField.setHorizontalAlignment(JTextField.CENTER);
 		messageToUserField.setText("Select the type, title, points received and possible, then press 'Add'");
         
-        enteredTasks=new JTextArea(25,50);
-        enteredTasks.setEditable(false);
-        enteredTasks.setLineWrap(true);
-        enteredTasks.setWrapStyleWord(true);
-        enteredTasks.setBackground(Color.lightGray);
+       		enteredTasks=new JTextArea(25,50);
+        	enteredTasks.setEditable(false);
+        	enteredTasks.setLineWrap(true);
+        	enteredTasks.setWrapStyleWord(true);
+        	enteredTasks.setBackground(Color.lightGray);
 		enteredTasks.setBorder(loweredbevelBorder);
         
-        overallGradeField = new JTextField();
+        	overallGradeField = new JTextField();
 		overallGradeField.setColumns(40);
 		overallGradeField.setEditable(false);
 		overallGradeField.setBackground(backgroundColor);
